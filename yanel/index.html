@@ -11,15 +11,15 @@
     <form action="">
         <div>
         <label for="donTextElement">Nombre: </label>
-        <input type="text" name="nombre" id="ingreseNombre" placeholder="Ingrese su nombre">
+        <input type="text" name="nombre" id="ingreseNombre" minlength="3" maxlength="12" placeholder="Ingrese su nombre">
     </div>
     <div>
         <label for="donTextElement">Apellido: </label>
-        <input type="text" name="apellido" id="ingreseApellido" placeholder="Ingrese su apellido">
+        <input type="text" name="apellido" id="ingreseApellido" minlength="3" maxlength="12" placeholder="Ingrese su apellido">
     </div>
     <div>
         <label for="donTextElement">E-mail: </label>
-        <input type="email" name="correo" id="ingreseMail" placeholder="Ingrese su e-Mail">
+        <input type="email" name="correo" id="ingreseMail" pattern=".+@\.com" placeholder="Ingrese su e-Mail">
     </div>
     <div></div>
         <label for="donTextElement">Consulta: </label>
