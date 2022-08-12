@@ -1,20 +1,28 @@
 let botonEnviar = document.getElementById("botonEnviar");
 botonEnviar.addEventListener("click", corroborarDatos);
+
+
+
+
 function corroborarDatos(){
-let ingreseNombre = document.getElementById("ingreseNombre");
-let ingreseApellido = document.getElementById("ingreseApellido");
-let ingreseMail = document.getElementById("ingreseMail");
-let ingreseConsulta = document.getElementById("ingreseConsulta");
-   if (ingreseNombre==""); {
+let ingreseNombre = document.getElementById("ingreseNombre").value;
+let ingreseApellido = document.getElementById("ingreseApellido").value;
+let ingreseMail = document.getElementById("ingreseMail").value;
+let ingreseConsulta = document.getElementById("ingreseConsulta").value;
+
+   
+   console.log (ingreseNombre);
+
+   if (ingreseNombre==="") {
     alert("Debe ingresar un nombre");
    }
-   if (ingreseApellido=="");{
+   if (ingreseApellido==="") {
     alert("Debe ingresar un apellido");
    }
-   if (ingreseMail=="");{
+   if (ingreseMail==="") {
     alert("Debe ingresar Mail");
    }
-   if (ingreseConsulta=="");{
+   if (ingreseConsulta==="") {
     alert("Debe ingresar consulta");
    }
 }
