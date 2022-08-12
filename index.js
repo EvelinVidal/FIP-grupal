@@ -1,26 +1,24 @@
-let ingreseNombre = document.getElementById("");
-ingreseNombre.addEventListener("");
-
-let ingreseApellido = document.getElementById("");
-ingreseApellido.addEventListener("");
-
-
-let ingreseMail = document.getElementById("");
-ingreseMail.addEventListener("");
-
-let botonEnviar = document.getElementById("");
-botonEnviar.addEventListener("");
-
-
-
-
-
-function   consulta (){
-
-alert(" el nombre tiene que tener  entre 3 y 20 caracteres")
-
-alert(" el apellido tiene que tener  entre 3 y 20 caracteres")
-alert(" Mail valido")
-alert(" La consulta no puede estar vacia")
-
+let botonEnviar = document.getElementById("botonEnviar");
+botonEnviar.addEventListener("click", corroborarDatos);
+function corroborarDatos(){
+let ingreseNombre = document.getElementById("ingreseNombre");
+let ingreseApellido = document.getElementById("ingreseApellido");
+let ingreseMail = document.getElementById("ingreseMail");
+let ingreseConsulta = document.getElementById("ingreseConsulta");
+   if (ingreseNombre==""); {
+    alert("Debe ingresar un nombre");
+   }
+   if (ingreseApellido=="");{
+    alert("Debe ingresar un apellido");
+   }
+   if (ingreseMail=="");{
+    alert("Debe ingresar Mail");
+   }
+   if (ingreseConsulta=="");{
+    alert("Debe ingresar consulta");
+   }
 }
+
+
+
+

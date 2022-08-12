@@ -13,19 +13,19 @@
     <form action="">
         <div>
         <label for="donTextElement"> Nombre: </label>
-        <input type="text" name="nombre" id="ingreseNombre" placeholder="Ingrese su nombre">
+        <input type="text" name="nombre" id="ingreseNombre" minlength="3" maxlength="20" placeholder="Ingrese su nombre">
     </div>
     <div>
         <label for="donTextElement"> Apellido: </label>
-        <input type="text" name="apellido" id="ingreseApellido" placeholder="Ingrese su apellido">
+        <input type="text" name="apellido" id="ingreseApellido" minlength="3" maxlength="20" placeholder="Ingrese su apellido">
     </div>
     <div>
         <label for="donTextElement"> E-mail: </label>
-        <input type="email" name="correo" id="ingreseMail" placeholder="Ingrese su e-Mail">
+        <input type="email" name="correo" id="ingreseMail"  placeholder="Ingrese su e-Mail"    pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
     </div>
     <div></div>
         <label for="donTextElement"> Consulta: </label>
-        <textarea name="consulta" rows="10" cols="30" placeholder="Ingrese su consulta"></textarea>
+        <textarea name="consulta" rows="10" cols="30" minlength="3" maxlength="20" placeholder="Ingrese su consulta"></textarea>
     </div>
     <div>
         <button id="botonEnviar"> Enviar</button>

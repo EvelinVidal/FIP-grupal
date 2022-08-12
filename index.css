@@ -1,20 +1,36 @@
-body {
-
-
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-background-color: rgb(117, 197, 135); /* Color de fondo */
-
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
 }
 
+form label{
+	width:72px;
+	font-weight:bold;	
+}
 
-form {
-    margin: 0 auto; /* Centramos el formulario */
-    width: 300px;   /* Sin ancho no podemos centrar el formulario */
-    background-color: rgb(74, 161, 233); /* Color blanco para el formulario */
-    padding: 2px; /* separamos los bordes del form del resto de elementos */
- }
+form input, textarea{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px;	
+}
 
+form button{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+    border-radius:5px;
+	color:#fff;
+	background-color:#000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
 
- input, textarea {
-    padding: 5px; /* Separamos la letra del interior (contenido) en los inputs de los bordes */
+form button:hover{
+	cursor:pointer;
 }
