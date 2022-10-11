@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Actividad grupal</title>
+</head>
+<body>
+    <form action="">
+        <div>
+        <label for="donTextElement">Nombre: </label>
+        <input type="text" name="nombre" id="ingreseNombre" minlength="3" maxlength="12" placeholder="Ingrese su nombre">
+    </div>
+    <div>
+        <label for="donTextElement">Apellido: </label>
+        <input type="text" name="apellido" id="ingreseApellido" minlength="3" maxlength="12" placeholder="Ingrese su apellido">
+    </div>
+    <div>
+        <label for="donTextElement">E-mail: </label>
+        <input type="email" name="correo" id="ingreseMail" pattern=".+@\.com" placeholder="Ingrese su e-Mail">
+    </div>
+    <div></div>
+        <label for="donTextElement">Consulta: </label>
+        <textarea name="consulta" rows="10" cols="30" minlength="1" maxlength="200" placeholder="Ingrese su consulta" id="ingreseConsulta"></textarea>
+    </div>
+    <div>
+        <button id="botonEnviar">Enviar</button>
+    </div>
+    </form>
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>
